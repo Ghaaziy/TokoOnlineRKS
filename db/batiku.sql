@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Jan 2021 pada 12.15
+-- Waktu pembuatan: 23 Jan 2021 pada 03.10
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -113,7 +113,15 @@ CREATE TABLE `tabel_produk` (
 --
 
 INSERT INTO `tabel_produk` (`idProduk`, `nama`, `gambar`, `keterangan`, `kategori`, `harga`, `stock`, `path`) VALUES
-(21, 'Mariposa', '13', 'Cerita Glen Anggara adalah sebuah novel Indonesia karangan Luluk HF. Novel tersebut merupakan sempalan dari novel Mariposa. Novel tersebut direncanakan bakal diadaptasi ke dalam bentuk film bernama sama.', 'novel', 55000, 10, 'image/13.jpg');
+(21, 'Mariposa', '13', 'Cerita Glen Anggara adalah sebuah novel Indonesia karangan Luluk HF. Novel tersebut merupakan sempalan dari novel Mariposa. Novel tersebut direncanakan bakal diadaptasi ke dalam bentuk film bernama sama.', 'novel', 55000, 9, 'image/13.jpg'),
+(33, 'Ayat-ayat Cinta', 'c391611ad97fa8a39fac7ba4777492bd', 'Ini adalah kisah cinta. Tapi bukan cuma sekadar kisah cinta yang biasa. Ini tentang bagaimana menghadapi turun-naiknya persoalan hidup dengan cara Islam. Fahri bin Abdillah adalah pelajar Indonesia yang berusaha menggapai gelar masternya di Al-Azhar. Berjibaku dengan panas-debu Mesir.', 'novel', 60000, 10, 'image/c391611ad97fa8a39fac7ba4777492bd.jpg'),
+(34, 'I Want to Eat Your Pancreas', '9776a98810c049663b4c89e6331e7a06', 'A high school boy finds the diary of his classmate—only to discover that she’s dying. Yamauchi Sakura has been silently suffering from a pancreatic disease, and now exactly one person outside her family knows. He swears to her that he won’t tell anyone what he learned, ', 'novel', 45000, 5, 'image/9776a98810c049663b4c89e6331e7a06.jpg'),
+(35, 'Cinta Itu Apaan', 'f85cb6480d00749d3c6e08e46fe2c46b', 'sebuah antologi cerpen keumpulan dari karya keren lomba cerpen yang diadakan BAKBUK.ID beberapa waktu yang lalu. Part 1 ini kita akan diajak berpetualang mengenal cinta dari berbagai sudut pandang. Bahkan cinta terhadap kematian, penasaran?', 'cerpen', 50000, 10, 'image/f85cb6480d00749d3c6e08e46fe2c46b.jpg'),
+(36, 'Perempuan, Cinta, dan Kehidupan', '6fd6c42a2d626ae766510f09c12003f8', 'Perempuan, Cinta dan Kehidupan: Kumpulan Cerpen Indonesia – Malaysia merupakan sekumpulan cerpen dari dua negara yang terdiri dari 10 penulis cerpen Indonesia dan 10 cerpen penulis Malaysia, yang dikemas indah menjadi satu buku.\r\n\r\nSetiap cinta yang disajikan berisi tema, nilai, budaya, rasa, dan permasalahan berbeda-beda yang membuat pembaca berimajinasi membayangkan setiap jalan cerita indah dan unik di dalamnya.', 'cerpen', 55000, 9, 'image/6fd6c42a2d626ae766510f09c12003f8.jpg'),
+(37, 'jejak Hitler di Nusantara', '86ab75cada15b8f8fec7a54bf22cb8f5', 'Bagaimana bisa sebuah permakaman militer Jerman dibangun di Cikopo? Mengapa ada U-boat yang karam di perairan Indonesia? Benarkah Hitler datang dengan U-boat ke Indonesia dan meninggal di Surabaya? Apakah Hitler memasok senjata bagi pejuang kemerdekaan kita? Siapa orang Indonesia yang bertugas dalam tentara Nazi?', 'sejarah', 60000, 10, 'image/86ab75cada15b8f8fec7a54bf22cb8f5.jpg'),
+(38, 'Matematika', 'f19638fb2a9a851d99bf08638f27de4b', 'jual Buku TRIK CERDAS BANK SOAL MATEMATIKA kls 10,11,12 SMA/MA BARU YA', 'pelajaran', 40000, 20, 'image/f19638fb2a9a851d99bf08638f27de4b.jpg'),
+(40, 'Ilmu Pengetahuan Alam', 'bf372f925b0b7c59f98ce775c3f5b0c9', 'Memuat segala hal tentang Ilmu pengetahuan Alam', 'pelajaran', 50000, 15, 'image/bf372f925b0b7c59f98ce775c3f5b0c9.jpg'),
+(41, 'Imagine', 'a219ddf4262163cb89d9bb4f6cff6a41', 'Kumpulan dari cerpen cerpen', 'cernak', 45000, 10, 'image/a219ddf4262163cb89d9bb4f6cff6a41.jpg');
 
 -- --------------------------------------------------------
 
@@ -136,7 +144,8 @@ CREATE TABLE `tabel_transaksi` (
 INSERT INTO `tabel_transaksi` (`idTransaksi`, `idUser`, `daftarBarang`, `tanggal`, `total`) VALUES
 (3, '1', '0', '0000-00-00', 2623000),
 (4, '1', '0', '2017-06-07', 123000),
-(5, '1', '0', '2017-06-07', 100000);
+(5, '1', '0', '2017-06-07', 100000),
+(7, '6', 'Mariposa, Kategori : novel, Jumlah : 1<br>', '2021-01-22', 55000);
 
 -- --------------------------------------------------------
 
@@ -179,8 +188,7 @@ CREATE TABLE `tabel_user` (
 --
 
 INSERT INTO `tabel_user` (`idUser`, `namaUser`, `email`, `password`, `alamat`, `telpon`) VALUES
-(4, 'Asep', 'asep@outlook.com', 'dc855efb0dc7476760afaa1b281665f1', 'Sukabumi', '087777777777'),
-(5, 'user', 'user@user.com', 'ee11cbb19052e40b07aac0ca060c23ee', 'Malang', '0897666555');
+(6, 'satrio', 'satrio@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'bengkulu', '082210191715');
 
 --
 -- Indexes for dumped tables
@@ -248,25 +256,25 @@ ALTER TABLE `tabel_komentar`
 -- AUTO_INCREMENT untuk tabel `tabel_produk`
 --
 ALTER TABLE `tabel_produk`
-  MODIFY `idProduk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `idProduk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT untuk tabel `tabel_transaksi`
 --
 ALTER TABLE `tabel_transaksi`
-  MODIFY `idTransaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idTransaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tabel_trolly`
 --
 ALTER TABLE `tabel_trolly`
-  MODIFY `idTrolly` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idTrolly` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tabel_user`
 --
 ALTER TABLE `tabel_user`
-  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

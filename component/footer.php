@@ -11,9 +11,9 @@
     <div class="col-xs-3 col-xs-offset-1 text-white">
       <h3 style="font-family:Cooper Std Black">Hubungi Kami</h3>
       <hr>
-      <a href="https://www.facebook.com/bugabagiblog" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="asset/img/facebook.png"></a>
+      <a href="https://www.facebook.com" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="asset/img/facebook.png"></a>
       <a href="https://www.youtube.com" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="asset/img/youtube.png"></a>
-      <a href="https://www.instagram.com/blogbugabagi" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="asset/img/instagram.png"></a>
+      <a href="https://www.instagram.com" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="asset/img/instagram.png"></a>
       <h5 style="margin-top: 7vh; font-family: News706 BT; font-size: 15px">Kantor Pusat :</h5>
       <div id="map" style="width:20vw;height:30vh;background:yellow; border-radius:5px"></div>
       <script>

@@ -49,7 +49,6 @@ session_start();
             $left_rec = $rec_count - ($page * $limit);
             $queryNovel = "SELECT * FROM tabel_produk WHERE kategori='novel' LIMIT $offset,$limit";
             $query_novel = mysqli_query($conn, $queryNovel);
-
             while ($arraynovel = mysqli_fetch_array($query_novel)) {
               echo '
             <li>
@@ -136,7 +135,6 @@ session_start();
               <h4><strong>' . $arraycerpen['nama'] . '</strong></h4>
               <p>' . $arraycerpen['keterangan'] . '</p>
               <h5>Rp.' . $arraycerpen['harga'] . '</h5>
-              <h5 class="ukur">Ukuran : ' . $arraycerpen['ukuran'] . '</h5>
               <button type="button" class="btn btn-success">Stock : ' . $arraycerpen['stock'] . '</button>
               ';
               if (isset($_SESSION['idUser'])) {
@@ -191,7 +189,6 @@ session_start();
                   <h4><strong>' . $arraysejarah['nama'] . '</strong></h4>
                   <p>' . $arraysejarah['keterangan'] . '</p>
                   <h5>Rp.' . $arraysejarah['harga'] . '</h5>
-                  <h5 class="ukur">Ukuran : ' . $arraysejarah['ukuran'] . '</h5>
                   <button type="button" class="btn btn-success">Stock : ' . $arraysejarah['stock'] . '</button>
                   ';
               if (isset($_SESSION['idUser'])) {
@@ -246,7 +243,6 @@ session_start();
               <h4><strong>' . $arraypelajaran['nama'] . '</strong></h4>
               <p>' . $arraypelajaran['keterangan'] . '</p>
               <h5>Rp.' . $arraypelajaran['harga'] . '</h5>
-              <h5 class="ukur">Ukuran : ' . $arraypelajaran['ukuran'] . '</h5>
               <button type="button" class="btn btn-success">Stock : ' . $arraypelajaran['stock'] . '</button>
               ';
               if (isset($_SESSION['idUser'])) {
@@ -300,7 +296,6 @@ session_start();
               <h4><strong>' . $arraycernak['nama'] . '</strong></h4>
               <p>' . $arraycernak['keterangan'] . '</p>
               <h5>Rp.' . $arraycernak['harga'] . '</h5>
-              <h5 class="ukur">Ukuran : ' . $arraycernak['ukuran'] . '</h5>
               <button type="button" class="btn btn-success">Stock : ' . $arraycernak['stock'] . '</button>
               ';
               if (isset($_SESSION['idUser'])) {

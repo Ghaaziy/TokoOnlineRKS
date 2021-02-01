@@ -44,6 +44,9 @@
 
 
       </li>
+      <li>
+        <a class="not-active" href="admin/login.php">Login Admin</a>
+      </li>
 
     </ul>
 
@@ -119,16 +122,16 @@
     </div>
     <div class="col-xs-6">
       <ul class="nav nav-pills kategori2">
-        <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dewasa<span class="caret" style="margin-left:10px"></span></a>
+        <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Buku<span class="caret" style="margin-left:10px"></span></a>
           <ul class="dropdown-menu">
-            <li><a data-toggle="pill" href="#pria">Pria</a></li>
-            <li><a data-toggle="pill" href="#wanita">Wanita</a></li>
+            <li><a data-toggle="pill" href="#novel">Novel</a></li>
+            <li><a data-toggle="pill" href="#cerpen">Cerpen</a></li>
           </ul>
 
         </li>
-        <li><a data-toggle="pill" href="#couple">Couple</a></li>
-        <li><a data-toggle="pill" href="#anak">Anak-anak</a></li>
-        <li><a data-toggle="pill" href="#sarimbit">Sarimbit</a></li>
+        <li><a data-toggle="pill" href="#sejarah">Sejarah</a></li>
+        <li><a data-toggle="pill" href="#pelajaran">Pelajaran</a></li>
+        <li><a data-toggle="pill" href="#cernak">Cerpen Anak</a></li>
       </ul>
     </div>
   </div>

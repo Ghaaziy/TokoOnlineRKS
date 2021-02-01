@@ -25,9 +25,8 @@
   if($query){
     echo '
       <script>
-      alert("Terima Kasih sudah Berbelanja, Silahkan Tranfer ke Rekening Mandiri 140-0-0-165473-4 an. Bahrul Amaruddin. Barang anda akan segera kami kirim setelah pembayaran dilakukan. Semoga anda nyaman dengan layanan kami.!");
+      alert("Terima Kasih sudah Berbelanja, Silahkan Tranfer ke Rekening Mandiri 150-9976-99970-00 an. M.Satrio . Barang anda akan segera kami kirim setelah pembayaran dilakukan. Semoga anda nyaman dengan layanan kami.!");
       window.location = "../home.php";
       </script>
     ';
   }
- ?>
